@@ -1,0 +1,16 @@
+{
+  "name": "Thinking Labs",
+  "short_name": "Thinking Labs",
+  "description": "Where consciousness meets creation. Where awareness transforms into alchemy.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0a0a0a",
+  "theme_color": "#ffffff",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ]
+}
