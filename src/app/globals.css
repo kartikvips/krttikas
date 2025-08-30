@@ -1,8 +1,70 @@
 @import "tailwindcss";
 
 :root {
+  /* Default theme */
   --background: #ffffff;
   --foreground: #171717;
+  
+  /* Monthly themes - Light mode */
+  --january-bg: #ffffff;
+  --january-fg: #1e3a8a;
+  --january-accent: #60a5fa;
+  --january-logo: #1e3a8a;
+  
+  --february-bg: #ffffff;
+  --february-fg: #dc2626;
+  --february-accent: #008751;
+  --february-logo: #dc2626;
+  
+  --march-bg: #ffffff;
+  --march-fg: #9b59b6;
+  --march-accent: #27ae60;
+  --march-logo: #9b59b6;
+  
+  --april-bg: #ffffff;
+  --april-fg: #059669;
+  --april-accent: #0ea5e9;
+  --april-logo: #059669;
+  
+  --may-bg: #ffffff;
+  --may-fg: #dc2626;
+  --may-accent: #f59e0b;
+  --may-logo: #dc2626;
+  
+  --june-bg: #ffffff;
+  --june-fg: #e40303;
+  --june-accent: #ff8c00;
+  --june-logo: #e40303;
+  
+  --july-bg: #ffffff;
+  --july-fg: #1e40af;
+  --july-accent: #dc2626;
+  --july-logo: #1e40af;
+  
+  --august-bg: #ffffff;
+  --august-fg: #171717;
+  --august-accent: #666666;
+  --august-logo: #171717;
+  
+  --september-bg: #ffffff;
+  --september-fg: #059669;
+  --september-accent: #dc2626;
+  --september-logo: #059669;
+  
+  --october-bg: #ffffff;
+  --october-fg: #ec4899;
+  --october-accent: #f9a8d4;
+  --october-logo: #ec4899;
+  
+  --november-bg: #ffffff;
+  --november-fg: #92400e;
+  --november-accent: #a16207;
+  --november-logo: #92400e;
+  
+  --december-bg: #ffffff;
+  --december-fg: #059669;
+  --december-accent: #dc2626;
+  --december-logo: #dc2626;
 }
 
 @theme inline {
@@ -14,8 +76,70 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
+    /* Default dark theme */
     --background: #0a0a0a;
     --foreground: #ededed;
+    
+    /* Monthly themes - Dark mode */
+    --january-bg: #0a0a0a;
+    --january-fg: #60a5fa;
+    --january-accent: #1e3a8a;
+    --january-logo: #ffffff;
+    
+    --february-bg: #0a0a0a;
+    --february-fg: #e31b23;
+    --february-accent: #008751;
+    --february-logo: #ffffff;
+    
+    --march-bg: #0a0a0a;
+    --march-fg: #d8b4fe;
+    --march-accent: #9b59b6;
+    --march-logo: #ffffff;
+    
+    --april-bg: #0a0a0a;
+    --april-fg: #10b981;
+    --april-accent: #0ea5e9;
+    --april-logo: #ffffff;
+    
+    --may-bg: #0a0a0a;
+    --may-fg: #fca5a5;
+    --may-accent: #dc2626;
+    --may-logo: #ffffff;
+    
+    --june-bg: #0a0a0a;
+    --june-fg: #fbbf24;
+    --june-accent: #e40303;
+    --june-logo: #ffffff;
+    
+    --july-bg: #0a0a0a;
+    --july-fg: #93c5fd;
+    --july-accent: #1e40af;
+    --july-logo: #ffffff;
+    
+    --august-bg: #0a0a0a;
+    --august-fg: #ffffff;
+    --august-accent: #666666;
+    --august-logo: #ffffff;
+    
+    --september-bg: #0a0a0a;
+    --september-fg: #10b981;
+    --september-accent: #dc2626;
+    --september-logo: #ffffff;
+    
+    --october-bg: #0a0a0a;
+    --october-fg: #f9a8d4;
+    --october-accent: #ec4899;
+    --october-logo: #ffffff;
+    
+    --november-bg: #0a0a0a;
+    --november-fg: #d97706;
+    --november-accent: #92400e;
+    --november-logo: #ffffff;
+    
+    --december-bg: #0a0a0a;
+    --december-fg: #fbbf24;
+    --december-accent: #059669;
+    --december-logo: #ffffff;
   }
 }
 
