@@ -2,34 +2,43 @@
 
 import Image from 'next/image';
 import { useState, useEffect } from 'react';
+import Link from 'next/link';
 
 export default function Home() {
-  // Get current month (0-11, so we add 1 to get 1-12)
-  const currentMonth = new Date().getMonth() + 1;
-  
   // Custom theme state - default to dark mode
   const [isDarkMode, setIsDarkMode] = useState(true);
   
-  // Map month numbers to month names and logo files
-  const monthLogos = {
-    1: { name: 'January', file: '/logo-january.svg' },
-    2: { name: 'February', file: '/logo-february.svg' },
-    3: { name: 'March', file: '/logo-march.svg' },
-    4: { name: 'April', file: '/logo-april.svg' },
-    5: { name: 'May', file: '/logo-may.svg' },
-    6: { name: 'June', file: '/logo-june.svg' },
-    7: { name: 'July', file: '/logo-july.svg' },
-    8: { name: 'August', file: '/logo.svg' }, // Default logo for August
-    9: { name: 'September', file: '/logo-september.svg' },
-    10: { name: 'October', file: '/logo-october.svg' },
-    11: { name: 'November', file: '/logo-november.svg' },
-    12: { name: 'December', file: '/logo-december.svg' }
+  // Get current month data in one place
+  const getCurrentMonthData = () => {
+    const currentMonth = new Date().getMonth() + 1;
+    
+    const monthLogos = {
+      1: { name: 'January', file: '/logo-january.svg' },
+      2: { name: 'February', file: '/logo-february.svg' },
+      3: { name: 'March', file: '/logo-march.svg' },
+      4: { name: 'April', file: '/logo-april.svg' },
+      5: { name: 'May', file: '/logo-may.svg' },
+      6: { name: 'June', file: '/logo-june.svg' },
+      7: { name: 'July', file: '/logo-july.svg' },
+      8: { name: 'August', file: '/logo.svg' }, // Default logo for August
+      9: { name: 'September', file: '/logo-september.svg' },
+      10: { name: 'October', file: '/logo-october.svg' },
+      11: { name: 'November', file: '/logo-november.svg' },
+      12: { name: 'December', file: '/logo-december.svg' }
+    };
+    
+    const monthData = monthLogos[currentMonth as keyof typeof monthLogos];
+    
+    return {
+      month: currentMonth,
+      name: monthData.name,
+      file: monthData.file,
+      cssName: monthData.name.toLowerCase()
+    };
   };
   
-  const currentMonthLogo = monthLogos[currentMonth as keyof typeof monthLogos];
-
-  // Get month name for CSS variables
-  const monthName = currentMonthLogo.name.toLowerCase();
+  const currentMonth = getCurrentMonthData();
+  console.log(currentMonth);
 
   // Toggle theme function
   const toggleTheme = () => {
@@ -49,8 +58,8 @@ export default function Home() {
     <main 
       className="min-h-screen flex items-center justify-center p-4 sm:p-8 relative"
       style={{
-        backgroundColor: `var(--${monthName}-bg)`,
-        color: `var(--${monthName}-fg)`
+        backgroundColor: `var(--${currentMonth.cssName}-bg)`,
+        color: `var(--${currentMonth.cssName}-fg)`
       }}
     >
       {/* Theme Toggle Button */}
@@ -75,8 +84,8 @@ export default function Home() {
         <div className="mb-8 sm:mb-16">
           <div className="w-12 h-12 sm:w-16 sm:h-16 mx-auto mb-6 sm:mb-8">
             <Image 
-              src={currentMonthLogo.file} 
-              alt={`Thinking Labs Logo - ${currentMonthLogo.name}`} 
+              src={currentMonth.file} 
+              alt={`Thinking Labs Logo - ${currentMonth.name}`} 
               width={64}
               height={64}
               className="w-full h-full"
@@ -90,14 +99,14 @@ export default function Home() {
         {/* Main Text */}
         <h1 
           className="text-4xl sm:text-6xl md:text-8xl font-light mb-4 sm:mb-6 tracking-tight"
-          style={{ color: `var(--${monthName}-fg)` }}
+          style={{ color: `var(--${currentMonth.cssName}-fg)` }}
         >
           Thinking Labs
         </h1>
 
         <p 
           className="text-lg sm:text-xl md:text-2xl mb-8 sm:mb-16 font-light"
-          style={{ color: `var(--${monthName}-accent)` }}
+          style={{ color: `var(--${currentMonth.cssName}-accent)` }}
         >
           Coming Soon
         </p>
@@ -105,11 +114,21 @@ export default function Home() {
         {/* Subtle CTA */}
         <div className="opacity-60 hover:opacity-100 transition-opacity duration-500">
           <p 
-            className="text-xs sm:text-sm uppercase tracking-widest"
-            style={{ color: `var(--${monthName}-accent)` }}
+            className="text-xs sm:text-sm uppercase tracking-widest mb-4"
+            style={{ color: `var(--${currentMonth.cssName}-accent)` }}
           >
             San Francisco, CA
           </p>
+        </div>
+        <div className="opacity-60 hover:opacity-100 transition-opacity duration-500">
+          {/* Mission Link */}
+          <Link
+            href="/mission"
+            className="inline-block text-sm opacity-70 hover:opacity-100 transition-opacity duration-200 underline"
+            style={{ color: `var(--${currentMonth.cssName}-accent)` }}
+          >
+            Read Our Mission Charter
+          </Link>
         </div>
       </div>
     </main>
