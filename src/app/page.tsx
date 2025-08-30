@@ -34,7 +34,7 @@ export default function Home() {
         <h1 className="text-6xl md:text-8xl font-light text-white mb-6 tracking-tight">
           Thinking Labs
         </h1>
-        
+
         <p className="text-xl md:text-2xl text-gray-400 mb-16 font-light">
           Coming Soon
         </p>
