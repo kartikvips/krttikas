@@ -5,7 +5,7 @@ export default function Home() {
         {/* Logo */}
         <div className="mb-16">
           <div className="w-16 h-16 mx-auto mb-8">
-            <img src="/logo.svg" alt="Thinking Labs Logo" className="w-full h-full" />
+            <img src="/logo-february.svg" alt="Thinking Labs Logo" className="w-full h-full" />
           </div>
         </div>
 
