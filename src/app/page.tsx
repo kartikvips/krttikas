@@ -1,3 +1,5 @@
+import Image from 'next/image';
+
 export default function Home() {
   // Get current month (0-11, so we add 1 to get 1-12)
   const currentMonth = new Date().getMonth() + 1;
@@ -26,7 +28,13 @@ export default function Home() {
         {/* Dynamic Monthly Logo */}
         <div className="mb-16">
           <div className="w-16 h-16 mx-auto mb-8">
-            <img src={currentMonthLogo.file} alt={`Thinking Labs Logo - ${currentMonthLogo.name}`} className="w-full h-full" />
+            <Image 
+              src={currentMonthLogo.file} 
+              alt={`Thinking Labs Logo - ${currentMonthLogo.name}`} 
+              width={64}
+              height={64}
+              className="w-full h-full"
+            />
           </div>
         </div>
 
