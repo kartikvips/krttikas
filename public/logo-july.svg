@@ -7,13 +7,13 @@
   <!-- Central neural core in blue -->
   <circle cx="32" cy="32" r="6" fill="#1E40AF"/>
   
-  <!-- Neural nodes in red and white alternating (6 total at 60° intervals, rotated 30°) -->
-  <circle cx="16" cy="32" r="2.5" fill="#DC2626"/>
+  <!-- Neural nodes in red and white (6 total at 60° intervals, rotated 30°, red at bottom) -->
+  <circle cx="16" cy="32" r="2.5" fill="#FFFFFF"/>
   <circle cx="24" cy="20" r="2.5" fill="#FFFFFF"/>
-  <circle cx="40" cy="20" r="2.5" fill="#DC2626"/>
-  <circle cx="48" cy="32" r="2.5" fill="#FFFFFF"/>
+  <circle cx="40" cy="20" r="2.5" fill="#FFFFFF"/>
+  <circle cx="48" cy="32" r="2.5" fill="#DC2626"/>
   <circle cx="40" cy="44" r="2.5" fill="#DC2626"/>
-  <circle cx="24" cy="44" r="2.5" fill="#FFFFFF"/>
+  <circle cx="24" cy="44" r="2.5" fill="#DC2626"/>
   
   <!-- Neural connections in white -->
   <path d="M16 32 L32 32" stroke="#FFFFFF" stroke-width="1" opacity="0.8"/>

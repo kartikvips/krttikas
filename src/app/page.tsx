@@ -10,7 +10,7 @@ export default function Home() {
   
   // Get current month data in one place
   const getCurrentMonthData = () => {
-    const currentMonth = 12;
+    const currentMonth = 6;
     
     const monthLogos = {
       1: { name: 'January', file: '/logo-january.svg' },
