@@ -119,101 +119,103 @@ export default function Mission() {
         </div>
 
         {/* Mission Sections */}
-        <div className="space-y-12">
+        <div className="space-y-16">
           {/* Purpose */}
-          <section className="bg-white/5 backdrop-blur-sm rounded-2xl p-8 border border-white/10">
-            <h2 className="text-2xl sm:text-3xl font-light mb-4 flex items-center">
-              <span className="text-2xl mr-3">🌱</span>
+          <section>
+            <h2 className="text-3xl sm:text-4xl font-light mb-6 flex items-center">
+              <span className="text-3xl mr-4">🌱</span>
               Purpose
             </h2>
-            <p className="text-lg leading-relaxed opacity-90">
+            <p className="text-xl leading-relaxed opacity-90 max-w-3xl">
               To create technology that uplifts human creativity, well-being, and freedom. 
               We believe technology should amplify what makes us human, not replace it.
             </p>
           </section>
 
           {/* Principles */}
-          <section className="bg-white/5 backdrop-blur-sm rounded-2xl p-8 border border-white/10">
-            <h2 className="text-2xl sm:text-3xl font-light mb-6 flex items-center">
-              <span className="text-2xl mr-3">⚡</span>
+          <section>
+            <h2 className="text-3xl sm:text-4xl font-light mb-8 flex items-center">
+              <span className="text-3xl mr-4">⚡</span>
               Principles
             </h2>
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-              <div className="flex items-center space-x-3">
-                <div className="w-2 h-2 rounded-full bg-green-400"></div>
-                <span className="opacity-90">Tech for good</span>
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-4xl">
+              <div className="flex items-center space-x-4">
+                <div className="w-3 h-3 rounded-full bg-green-400"></div>
+                <span className="text-lg opacity-90">Tech for good</span>
               </div>
-              <div className="flex items-center space-x-3">
-                <div className="w-2 h-2 rounded-full bg-blue-400"></div>
-                <span className="opacity-90">Sustainability</span>
+              <div className="flex items-center space-x-4">
+                <div className="w-3 h-3 rounded-full bg-blue-400"></div>
+                <span className="text-lg opacity-90">Sustainability</span>
               </div>
-              <div className="flex items-center space-x-3">
-                <div className="w-2 h-2 rounded-full bg-purple-400"></div>
-                <span className="opacity-90">Accessibility</span>
+              <div className="flex items-center space-x-4">
+                <div className="w-3 h-3 rounded-full bg-purple-400"></div>
+                <span className="text-lg opacity-90">Accessibility</span>
               </div>
-              <div className="flex items-center space-x-3">
-                <div className="w-2 h-2 rounded-full bg-yellow-400"></div>
-                <span className="opacity-90">Integrity</span>
+              <div className="flex items-center space-x-4">
+                <div className="w-3 h-3 rounded-full bg-yellow-400"></div>
+                <span className="text-lg opacity-90">Integrity</span>
               </div>
-              <div className="flex items-center space-x-3">
-                <div className="w-2 h-2 rounded-full bg-red-400"></div>
-                <span className="opacity-90">Creativity</span>
+              <div className="flex items-center space-x-4">
+                <div className="w-3 h-3 rounded-full bg-red-400"></div>
+                <span className="text-lg opacity-90">Creativity</span>
               </div>
-              <div className="flex items-center space-x-3">
-                <div className="w-2 h-2 rounded-full bg-indigo-400"></div>
-                <span className="opacity-90">Community</span>
+              <div className="flex items-center space-x-4">
+                <div className="w-3 h-3 rounded-full bg-indigo-400"></div>
+                <span className="text-lg opacity-90">Community</span>
               </div>
             </div>
           </section>
 
           {/* Commitments */}
-          <section className="bg-white/5 backdrop-blur-sm rounded-2xl p-8 border border-white/10">
-            <h2 className="text-2xl sm:text-3xl font-light mb-6 flex items-center">
-              <span className="text-2xl mr-3">🤝</span>
+          <section>
+            <h2 className="text-3xl sm:text-4xl font-light mb-8 flex items-center">
+              <span className="text-3xl mr-4">🤝</span>
               Commitments
             </h2>
-            <ul className="space-y-4 text-lg leading-relaxed opacity-90">
-              <li className="flex items-start space-x-3">
-                <span className="text-green-400 mt-1">•</span>
-                <span>We pledge to reinvest sustainable growth in community impact</span>
-              </li>
-              <li className="flex items-start space-x-3">
-                <span className="text-green-400 mt-1">•</span>
-                <span>Share knowledge openly where possible to uplift the entire ecosystem</span>
-              </li>
-              <li className="flex items-start space-x-3">
-                <span className="text-green-400 mt-1">•</span>
-                <span>Prioritize user well-being and mental health in all our products</span>
-              </li>
-            </ul>
+            <div className="space-y-6 max-w-3xl">
+              <div className="flex items-start space-x-4">
+                <span className="text-green-400 text-xl mt-1">•</span>
+                <span className="text-lg leading-relaxed opacity-90">We pledge to reinvest sustainable growth in community impact</span>
+              </div>
+              <div className="flex items-start space-x-4">
+                <span className="text-green-400 text-xl mt-1">•</span>
+                <span className="text-lg leading-relaxed opacity-90">Share knowledge openly where possible to uplift the entire ecosystem</span>
+              </div>
+              <div className="flex items-start space-x-4">
+                <span className="text-green-400 text-xl mt-1">•</span>
+                <span className="text-lg leading-relaxed opacity-90">Prioritize user well-being and mental health in all our products</span>
+              </div>
+            </div>
           </section>
 
           {/* Sustainable Growth */}
-          <section className="bg-white/5 backdrop-blur-sm rounded-2xl p-8 border border-white/10">
-            <h2 className="text-2xl sm:text-3xl font-light mb-4 flex items-center">
-              <span className="text-2xl mr-3">🌿</span>
+          <section>
+            <h2 className="text-3xl sm:text-4xl font-light mb-6 flex items-center">
+              <span className="text-3xl mr-4">🌿</span>
               Sustainable Growth
             </h2>
-            <p className="text-lg leading-relaxed opacity-90 mb-4">
-              Sustainable growth fuels our mission; it is not the mission itself. 
-              We measure success by the communities we strengthen and the knowledge we share.
-            </p>
-            <p className="text-lg leading-relaxed opacity-90 mb-4">
-              We aim to operate with the generosity, discipline, and stewardship of a nonprofit, 
-              while sustaining ourselves through the resources we generate.
-            </p>
-            <p className="text-lg leading-relaxed opacity-90">
-              Our focus is on reinvestment, accessibility, and long-term human benefit.
-            </p>
+            <div className="space-y-6 max-w-3xl">
+              <p className="text-xl leading-relaxed opacity-90">
+                Sustainable growth fuels our mission; it is not the mission itself. 
+                We measure success by the communities we strengthen and the knowledge we share.
+              </p>
+              <p className="text-xl leading-relaxed opacity-90">
+                We aim to operate with the generosity, discipline, and stewardship of a nonprofit, 
+                while sustaining ourselves through the resources we generate.
+              </p>
+              <p className="text-xl leading-relaxed opacity-90">
+                Our focus is on reinvestment, accessibility, and long-term human benefit.
+              </p>
+            </div>
           </section>
 
           {/* Evolution */}
-          <section className="bg-white/5 backdrop-blur-sm rounded-2xl p-8 border border-white/10">
-            <h2 className="text-2xl sm:text-3xl font-light mb-4 flex items-center">
-              <span className="text-2xl mr-3">🔄</span>
+          <section>
+            <h2 className="text-3xl sm:text-4xl font-light mb-6 flex items-center">
+              <span className="text-3xl mr-4">🔄</span>
               Evolution
             </h2>
-            <p className="text-lg leading-relaxed opacity-90">
+            <p className="text-xl leading-relaxed opacity-90 max-w-3xl">
               This charter is reviewed annually to ensure it remains aligned with our purpose 
               and the evolving needs of our community. We commit to growing and adapting 
               while staying true to our core values.
