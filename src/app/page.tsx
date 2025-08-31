@@ -10,7 +10,7 @@ export default function Home() {
   
   // Get current month data in one place
   const getCurrentMonthData = () => {
-    const currentMonth = new Date().getMonth() + 1;
+    const currentMonth = 12;
     
     const monthLogos = {
       1: { name: 'January', file: '/logo-january.svg' },
@@ -85,7 +85,7 @@ export default function Home() {
           <div className="w-12 h-12 sm:w-16 sm:h-16 mx-auto mb-6 sm:mb-8">
             <Image 
               src={currentMonth.file} 
-              alt={`Thinking Labs Logo - ${currentMonth.name}`} 
+              alt={`Kṛttikās Logo - ${currentMonth.name}`} 
               width={64}
               height={64}
               className="w-full h-full"
@@ -101,7 +101,7 @@ export default function Home() {
           className="text-4xl sm:text-6xl md:text-8xl font-light mb-4 sm:mb-6 tracking-tight"
           style={{ color: `var(--${currentMonth.cssName}-fg)` }}
         >
-          Thinking Labs
+          Kṛttikās
         </h1>
 
         <p 

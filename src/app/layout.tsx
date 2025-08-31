@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Thinking Labs",
+  title: "Kṛttikās",
   description: "Where consciousness meets creation. Where awareness transforms into alchemy.",
 };
 

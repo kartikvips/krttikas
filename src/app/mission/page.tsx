@@ -99,7 +99,7 @@ export default function Mission() {
           <div className="w-16 h-16 sm:w-20 sm:h-20 mx-auto mb-8">
             <Image 
               src={currentMonth.file} 
-              alt={`Thinking Labs Logo - ${currentMonth.name}`} 
+              alt={`Kṛttikās Logo - ${currentMonth.name}`} 
               width={80}
               height={80}
               className="w-full h-full"
