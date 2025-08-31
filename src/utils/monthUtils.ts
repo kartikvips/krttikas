@@ -20,7 +20,7 @@ export const monthLogos = {
 };
 
 export const getCurrentMonthData = () => {
-  const currentMonth = 1;
+  const currentMonth = getCurrentMonth();
   const monthData = monthLogos[currentMonth as keyof typeof monthLogos];
   
   return {
