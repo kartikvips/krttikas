@@ -1,6 +1,8 @@
 import type { Metadata } from 'next'
 import './globals.css'
 import { getCurrentFavicon } from '@/utils/monthUtils'
+import { ThemeProvider } from '@/contexts/ThemeContext'
+import ThemeToggle from '@/components/ThemeToggle'
 
 export const metadata: Metadata = {
   title: "Kṛttikās",
@@ -18,7 +20,10 @@ export default function RootLayout({
         <link rel="icon" href={getCurrentFavicon()} type="image/svg+xml" />
       </head>
       <body className="font-sans antialiased">
-        {children}
+        <ThemeProvider>
+          <ThemeToggle />
+          {children}
+        </ThemeProvider>
       </body>
     </html>
   )
