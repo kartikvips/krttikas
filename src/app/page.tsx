@@ -119,7 +119,8 @@ export default function Home() {
           >
             San Francisco, CA
           </p>
-          
+        </div>
+        <div className="opacity-60 hover:opacity-100 transition-opacity duration-500">
           {/* Mission Link */}
           <Link 
             href="/mission"

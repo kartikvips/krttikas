@@ -27,9 +27,6 @@
   <path d="M32 16 L32 32" stroke="#FFED00" stroke-width="1" opacity="0.8"/>
   <path d="M32 48 L32 32" stroke="#008026" stroke-width="1" opacity="0.8"/>
   
-  <!-- Cross-connections in rainbow colors -->
-  <path d="M20 20 L44 20" stroke="#FF8C00" stroke-width="0.5" opacity="0.6"/>
-  <path d="M20 44 L44 44" stroke="#008026" stroke-width="0.5" opacity="0.6"/>
-  <path d="M16 32 L48 32" stroke="#760188" stroke-width="0.5" opacity="0.6"/>
+  <!-- Cross-connections in rainbow colors (vertical only) -->
   <path d="M32 16 L32 48" stroke="#FFED00" stroke-width="0.5" opacity="0.6"/>
 </svg>
