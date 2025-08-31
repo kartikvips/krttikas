@@ -1,0 +1,28 @@
+<svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Neural Network - April (Earth Day) - Light Version (Inverted) -->
+  
+  <!-- Outer border in light green (inverted from green) -->
+  <circle cx="32" cy="32" r="30" stroke="#FA6996" stroke-width="2" fill="none"/>
+  
+  <!-- Central neural core in orange (inverted from blue) -->
+  <circle cx="32" cy="32" r="6" fill="#F15A16"/>
+  
+  <!-- Neural nodes in green (keep green as it's already good for light backgrounds) -->
+  <circle cx="16" cy="32" r="2.5" fill="#059669"/>
+  <circle cx="24" cy="20" r="2.5" fill="#059669"/>
+  <circle cx="40" cy="20" r="2.5" fill="#059669"/>
+  <circle cx="48" cy="32" r="2.5" fill="#059669"/>
+  <circle cx="40" cy="44" r="2.5" fill="#059669"/>
+  <circle cx="24" cy="44" r="2.5" fill="#059669"/>
+  
+  <!-- Neural connections in light green (inverted from brown) -->
+  <path d="M16 32 L32 32" stroke="#6DBFF1" stroke-width="1" opacity="0.8"/>
+  <path d="M24 20 L32 32" stroke="#6DBFF1" stroke-width="1" opacity="0.8"/>
+  <path d="M40 20 L32 32" stroke="#6DBFF1" stroke-width="1" opacity="0.8"/>
+  <path d="M48 32 L32 32" stroke="#6DBFF1" stroke-width="1" opacity="0.8"/>
+  <path d="M40 44 L32 32" stroke="#6DBFF1" stroke-width="1" opacity="0.8"/>
+  <path d="M24 44 L32 32" stroke="#6DBFF1" stroke-width="1" opacity="0.8"/>
+  
+  <!-- Cross-connections in light green (inverted from brown) -->
+  <path d="M16 32 L48 32" stroke="#6DBFF1" stroke-width="0.5" opacity="0.6"/>
+</svg>

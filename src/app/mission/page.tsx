@@ -56,7 +56,7 @@ export default function Mission() {
           </h1>
           
           <p className="text-lg sm:text-xl text-center max-w-2xl mx-auto opacity-80">
-            Our commitment to technology that uplifts human creativity, well-being, and freedom.
+            Our guiding principles and commitments for building technology that serves humanity.
           </p>
         </div>
 
