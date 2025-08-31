@@ -3,40 +3,13 @@
 import Image from 'next/image';
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
+import { getCurrentMonthData } from '@/utils/monthUtils';
 
 export default function Home() {
   // Custom theme state - default to dark mode
   const [isDarkMode, setIsDarkMode] = useState(true);
   
-  // Get current month data in one place
-  const getCurrentMonthData = () => {
-    const currentMonth = 6;
-    
-    const monthLogos = {
-      1: { name: 'January', file: '/logo-january.svg' },
-      2: { name: 'February', file: '/logo-february.svg' },
-      3: { name: 'March', file: '/logo-march.svg' },
-      4: { name: 'April', file: '/logo-april.svg' },
-      5: { name: 'May', file: '/logo-may.svg' },
-      6: { name: 'June', file: '/logo-june.svg' },
-      7: { name: 'July', file: '/logo-july.svg' },
-      8: { name: 'August', file: '/logo.svg' }, // Default logo for August
-      9: { name: 'September', file: '/logo-september.svg' },
-      10: { name: 'October', file: '/logo-october.svg' },
-      11: { name: 'November', file: '/logo-november.svg' },
-      12: { name: 'December', file: '/logo-december.svg' }
-    };
-    
-    const monthData = monthLogos[currentMonth as keyof typeof monthLogos];
-    
-    return {
-      month: currentMonth,
-      name: monthData.name,
-      file: monthData.file,
-      cssName: monthData.name.toLowerCase()
-    };
-  };
-  
+  // Get current month data from shared utility
   const currentMonth = getCurrentMonthData();
   console.log(currentMonth);
 
@@ -119,8 +92,7 @@ export default function Home() {
           >
             San Francisco, CA
           </p>
-        </div>
-        <div className="opacity-60 hover:opacity-100 transition-opacity duration-500">
+          
           {/* Mission Link */}
           <Link 
             href="/mission"
