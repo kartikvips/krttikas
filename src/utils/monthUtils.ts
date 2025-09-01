@@ -1,7 +1,9 @@
 // Month utilities for Kṛttikās monthly themes
 
 export const getCurrentMonth = () => {
-  return new Date().getMonth() + 1; // getMonth() returns 0-11, so add 1
+  const month = new Date().getMonth() + 1; // getMonth() returns 0-11, so add 1
+  console.log('Current month detected:', month, 'Date:', new Date().toString());
+  return month;
 };
 
 export const monthLogos = {
